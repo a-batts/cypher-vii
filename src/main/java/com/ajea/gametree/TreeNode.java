@@ -1,5 +1,7 @@
 package com.ajea.gametree;
 
+import static com.ajea.Main.PLAYER;
+
 public class TreeNode {
     private TreeNode left = null;
     private TreeNode middle = null;
@@ -43,7 +45,11 @@ public class TreeNode {
         this.right = right;
     }
 
-    public void getChoices(){
+    public String[] getChoices(){
+        String[] finalChoices = new String[choices.length];
+        for(int i = 0; i < choices.length; i++)
+            finalChoices[i] = choices[i].getChoiceForSkillLevel(PLAYER.getLevelOfSkill(choices[i].skill));
 
+        return finalChoices;
     }
 }
