@@ -20,6 +20,7 @@ public class TypingTest implements Minigame {
     };
     final Scanner input = new Scanner(System.in); // Scanner for easy handling of user input
 
+    public String gameSkill = "coordination";
 
     /**
      * Starts the typing test. Goes through each prompt, and asks the user to type it, checks if they're correct, gives feedback,
