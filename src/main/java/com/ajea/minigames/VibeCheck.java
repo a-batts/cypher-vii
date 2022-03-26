@@ -16,11 +16,20 @@ public class VibeCheck extends JPanel implements Minigame{
     private int increm = 0;
 
     public VibeCheck(){
+
     }
 
     @Override
     public SkillLevel start() {
-        return null;
+        int score = 0;
+        while(increm<3){
+            if(test(prompts[increm], options[increm], answers[increm])){
+                score++;
+            }
+            increm++;
+            repaint();
+        }
+        return skillLevel(score);
     }
 
     public void paintComponent(Graphics g){
@@ -38,22 +47,9 @@ public class VibeCheck extends JPanel implements Minigame{
         return false;
     }
 
-    public int checkVibe(){
-        int score = 0;
-        while(increm<3){
-            if(test(prompts[increm], options[increm], answers[increm])){
-                score++;
-            }
-            increm++;
-            repaint();
-        }
-        return score;
-    }
-
-    public SkillLevel skillLevel(){
-        int skill = checkVibe();
-        if(skill == 3) return SkillLevel.HIGH;
-        else if (skill == 2) return SkillLevel.MEDIUM;
+    private SkillLevel skillLevel(int score){
+        if(score == 3) return SkillLevel.HIGH;
+        else if (score == 2) return SkillLevel.MEDIUM;
         else return SkillLevel.LOW;
     }
 
