@@ -1,6 +1,6 @@
 package com.ajea;
 
-import com.ajea.Enums.SkillLevel;
+import com.ajea.enums.SkillLevel;
 
 import java.util.HashMap;
 import java.util.Map;
