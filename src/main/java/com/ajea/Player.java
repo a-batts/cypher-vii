@@ -19,4 +19,8 @@ public class Player {
     public void setSkill(String skillName, SkillLevel level){
         skills.replace(skillName, level);
     }
+
+    public SkillLevel getLevelOfSkill(String skillName){
+        return skills.get(skillName);
+    }
 }
