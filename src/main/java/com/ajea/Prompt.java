@@ -5,10 +5,16 @@ import java.util.Scanner;
 
 public class Prompt {
 
-    //Usage for this class would be Prompt.promptUser(...)
+    /**
+     * Print out a question and a set of answer choices and return the choice the user selects if valid
+     * @param prompt Question to ask user
+     * @param choices Array of choices to provide user
+     * @return int User selected choice
+     */
+    //Usage for this class would be int i = Prompt.promptUser(...)
     public static int promptUser(String prompt, String[] choices){
         Scanner scan = new Scanner(System.in);
-        //Print out prompt
+        //Print out question
         System.out.println(prompt);
         System.out.println();
         //Print out all choices
@@ -26,6 +32,7 @@ public class Prompt {
             //Catch non-int input
             catch(InputMismatchException ignored){
                 System.out.println("Please enter a valid option");
+                //Consume token so infinite loop does not occur
                 scan.nextLine();
             }
         }

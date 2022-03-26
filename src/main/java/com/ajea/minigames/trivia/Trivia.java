@@ -8,35 +8,40 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Trivia implements Minigame {
-    public SkillLevel start(){
-        int correctQuestions = 0;
-        intro();
+    private int correctQuestions = 0;
 
-        List<TriviaQuestion> questionsBank = new LinkedList<>(Arrays.asList(
-                new TriviaQuestion("Who is the president of William and Mary?", new String[]{"Kathy Rowe", "Jim Deverick", "Peggy Agouris"}, 1),
-                new TriviaQuestion("Which of these buildings is the oldest?", new String[]{"Boswell Hall", "Commons Dining Hall (Caf)", "Pleasents Hall"}, 2),
-                new TriviaQuestion("What is the William & Mary student:faculty ratio?", new String[]{"12:1", "13:1", "14:1"}, 1),
-                new TriviaQuestion("Which of these people was not a William & Mary chancellor?", new String[]{"George Washington", "John Adams", "Margaret Thatcher"}, 2),
-                new TriviaQuestion("William & Mary is designated as a \"Public Ivy\". Which of these other schools is also a public ivy?", new String[]{"Miami University", "University of Washington", "University of Colorado: Boulder"}, 1),
-                new TriviaQuestion("Which of these programs was W&M the first university to offer?", new String[]{"1693", "1727", "1779"}, 3)
-        ));
+    private final List<TriviaQuestion> QUESTIONS_BANK = new LinkedList<>(Arrays.asList(
+            new TriviaQuestion("Who is the president of William and Mary?", new String[]{"Kathy Rowe", "Jim Deverick", "Peggy Agouris"}, 1),
+            new TriviaQuestion("Which of these buildings is the oldest?", new String[]{"Boswell Hall", "Commons Dining Hall (Caf)", "Pleasents Hall"}, 2),
+            new TriviaQuestion("What is the William & Mary student:faculty ratio?", new String[]{"12:1", "13:1", "14:1"}, 1),
+            new TriviaQuestion("Which of these people was not a William & Mary chancellor?", new String[]{"George Washington", "John Adams", "Margaret Thatcher"}, 2),
+            new TriviaQuestion("William & Mary is designated as a \"Public Ivy\". Which of these other schools is also a public ivy?", new String[]{"Miami University", "University of Washington", "University of Colorado: Boulder"}, 1),
+            new TriviaQuestion("Which of these programs was W&M the first university to offer?", new String[]{"1693", "1727", "1779"}, 3)
+    ));
+
+    /**
+     * Starts the trivia minigame. Prompts user with 5 random trivia questions and counts how many they get right.
+     * @return SkillLevel
+     */
+    public SkillLevel start(){
+        intro();
 
         for(int i = 0; i < 5; i++){
             //Select random number from 0 to the size of the question bank
-            int selectedQ = (int) (Math.random()*questionsBank.size());
-            TriviaQuestion q = questionsBank.get(selectedQ);
+            int selectedQ = (int) (Math.random()* QUESTIONS_BANK.size());
+            TriviaQuestion q = QUESTIONS_BANK.get(selectedQ);
             if (q.quiz()){
                 correctQuestions++;
-                System.out.println("Correct!");
+                System.out.println("Correct! Good job!");
             }
             else
                 System.out.println("Incorrect answer");
-            //Remove solved question to prevent repetition
-            questionsBank.remove(0);
+            //Remove solved question to prevent a user getting re-prompted with the same question
+            QUESTIONS_BANK.remove(0);
             System.out.println();
-
         }
 
+        //Return user's skill level based on how many questions they get correct
         return switch (correctQuestions) {
             case 2, 3 -> SkillLevel.MEDIUM;
             case 5 -> SkillLevel.HIGH;
@@ -44,7 +49,7 @@ public class Trivia implements Minigame {
         };
     }
 
-    public void intro(){
+    private void intro(){
         System.out.println("Show us how much you actually know about William and Mary by answering a few trivia questions.\n" +
                 "The more you get correct, the higher your intelligence stat will be.");
     }

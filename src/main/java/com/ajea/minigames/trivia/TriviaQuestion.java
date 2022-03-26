@@ -13,6 +13,10 @@ public class TriviaQuestion {
         this.correctAnswer = correctAnswer;
     }
 
+    /**
+     * Runs quiz using prompt class and check if users response is correct
+     * @return boolean
+     */
     public boolean quiz(){
         return correctAnswer == Prompt.promptUser(question, answers);
     }
