@@ -13,7 +13,7 @@ public class TypingTest {
     final String ANSI_RED = "\u001B[31m";
     final String ANSI_GREEN = "\u001B[32m";
 
-    int score = 0, promptIndex = 0, correctCount = 0;
+    int score = 0, promptIndex = 0;
     final String[] PROMPTS = {
             "Cypher VII is W&M's seventh annual hackathon.",
             "William and Mary is the first to establish an honor system.",
@@ -44,7 +44,7 @@ public class TypingTest {
 
             // Returns true if the user input is 80% correct and the time taken is less than 10 seconds.
             if (checkInputAndTime(userInput, PROMPTS[promptIndex], timeTaken)) {
-                feedback(true); correctCount++;
+                feedback(true); score++;
             } else {
                 feedback(false);
             }
