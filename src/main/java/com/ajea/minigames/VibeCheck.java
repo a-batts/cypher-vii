@@ -7,33 +7,37 @@ import javax.swing.*;
 import java.awt.*;
 
 public class VibeCheck extends JPanel implements Minigame{
-    private String[] images = {};
+    private String[] images = {"chair1.png", "kitchen1.png", "cage1.png","chair2.png","kitchen2.png","cage2.png"};
     private static int maxHeight = 1500;
     private static int maxWidth = 900;
-    private String[] prompts = {};
-    private String[][] options = {{}};
-    private int answers[] = {};
-    private int increm = 0;
+    private String[] prompts = {"Who sat in the chair?", "What was made in the kitchen?", "What animal was in the cage?"};
+    private String[][] options = {{"1: your father", "2: your mother", "3: the mayor", "4: your dog"},
+                                    {"1: cake", "2: salad", "3: mac n cheese", "4: chili"},
+                                    {"1: hamster", "2: snake", "3: fish", "4: chihuahua"}};
+    private int answers[] = {1, 4, 2, 4, 1, 2};
+    private int cur;
 
     public VibeCheck(){
-
+        cur = (int)(images.length*Math.random());
     }
 
     @Override
     public SkillLevel start() {
         int score = 0;
-        while(increm<3){
-            if(test(prompts[increm], options[increm], answers[increm])){
+        for(int i=0; i <3; i++){
+            if (cur == images.length-1 ) cur++;
+            else cur = 0;
+            if (test(prompts[cur/2], options[cur/2], answers[cur/2])){
                 score++;
             }
-            increm++;
+
             repaint();
         }
         return skillLevel(score);
     }
 
     public void paintComponent(Graphics g){
-        ImageIcon senario = new ImageIcon(images[increm]);
+        ImageIcon senario = new ImageIcon(images[cur]);
         g.drawImage(senario.getImage(), 0,0, maxWidth, maxHeight, null);
 
     }
