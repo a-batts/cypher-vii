@@ -1,11 +1,15 @@
 package com.ajea.minigames;
+
 import com.ajea.Enums.SkillLevel;
+
 import java.util.Scanner;
 
 public class TypingTest {
     // Color Constants of Console Text
     final String ANSI_RESET = "\u001B[0m"; // Reset to consoles default.
     final String ANSI_BLUE = "\u001B[34m";
+    final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
+    final String ANSI_WHITE = "\u001B[37m";
     final String ANSI_RED = "\u001B[31m";
     final String ANSI_GREEN = "\u001B[32m";
 
@@ -20,6 +24,8 @@ public class TypingTest {
      * @return SkillLevel
      */
     public SkillLevel start() {
+        intro();
+
         for (int i = 0; i < PROMPTS.length; i++, promptIndex++) {
             // Prints the prompt and waits for the user to type in the answer. ANSI is color.
             System.out.println(ANSI_BLUE + "Type the following prompt:" + ANSI_RESET + " " + PROMPTS[promptIndex]);
@@ -38,6 +44,18 @@ public class TypingTest {
         }
 
         return getSkillLevel();
+    }
+
+    private void intro() {
+        System.out.println(ANSI_BLUE_BACKGROUND + "Are you coordinated?" + ANSI_RESET + " Let's see how you do!\n" +
+                "For this typing test, you'll need to get 80% of words correct in under 15 seconds.\n");
+
+        // We wait 6 seconds so the user can read the instructions.
+        try {
+            Thread.sleep(6000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
