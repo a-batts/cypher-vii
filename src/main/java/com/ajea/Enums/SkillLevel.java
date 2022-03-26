@@ -9,7 +9,7 @@ public enum SkillLevel {
         this.level = level;
     }
 
-    public int getLevel() {
+    public int getLevelInt() {
         return level;
     }
 }
