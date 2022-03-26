@@ -9,7 +9,7 @@ public class TreeNode {
     public String dialog;
     //Prompt and choices for game action node
     public String prompt;
-    public String[] choices;
+    public Choice[] choices;
 
     public TreeNode(){}
 
@@ -41,5 +41,9 @@ public class TreeNode {
 
     public void setRight(TreeNode right) {
         this.right = right;
+    }
+
+    public void getChoices(){
+
     }
 }
