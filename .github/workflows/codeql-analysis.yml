@@ -43,6 +43,7 @@ jobs:
     - name: Setup Java JDK
       uses: actions/setup-java@v3.0.0
       with:
+        distribution: 'temurin'
         java-version: 14
 
     # Initializes the CodeQL tools for scanning.
