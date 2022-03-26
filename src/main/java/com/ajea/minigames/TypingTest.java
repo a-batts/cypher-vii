@@ -14,7 +14,14 @@ public class TypingTest {
     final String ANSI_GREEN = "\u001B[32m";
 
     int score = 0, promptIndex = 0, correctCount = 0;
-    final String[] PROMPTS = { "The quick brown fox jumps over the lazy dog.", "Hi" };
+    final String[] PROMPTS = {
+            "Cypher VII is W&M's seventh annual hackathon.",
+            "William and Mary is the first to establish an honor system.",
+            "We have the oldest and first intercollegiate fraternity.",
+            "James Madison, the president, was our 8th president!",
+            "Katherine Rowe was a World Ultimate Frisbee Club finalist.",
+            "Dr. Rowe received her PhD from Harvard University in English and American Literature.",
+    };
     final Scanner input = new Scanner(System.in); // Scanner for easy handling of user input
 
 
