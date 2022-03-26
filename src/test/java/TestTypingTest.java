@@ -1,5 +1,7 @@
 import com.ajea.minigames.TypingTest;
 
 public class TestTypingTest {
-    TypingTest test = new TypingTest();
+    public static void main(String[] args){
+        TypingTest test = new TypingTest();
+    }
 }
