@@ -11,9 +11,9 @@ public class Player {
     public Player(){
         skills.put("intelligence", SkillLevel.LOW);
         skills.put("intuition", SkillLevel.LOW);
-        skills.put("vibe check", SkillLevel.LOW);
+        skills.put("observation", SkillLevel.LOW);
         skills.put("coordination", SkillLevel.LOW);
-        skills.put("charisma", SkillLevel.LOW);
+        skills.put("charm", SkillLevel.LOW);
     }
 
     public void setSkill(String skillName, SkillLevel level){
