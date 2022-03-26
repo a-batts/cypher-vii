@@ -13,14 +13,15 @@ public class GameTree {
         catch(FileNotFoundException e){
             System.out.println("Error - resources were not able to be loaded");
         }
-
-        setUpTree();
     }
 
-    private void setUpTree(){
+    public GameTree initTree(){
         //NEED TO IMPLEMENT
         //Read from json file and import everything into tree nodes
         File dialog = dialogFile;
+
+
+        return this;
     }
 
     private void setFile(String fileName) throws FileNotFoundException {

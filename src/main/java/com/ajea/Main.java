@@ -1,6 +1,8 @@
 package com.ajea;
 
 import java.util.Scanner;
+
+import com.ajea.gametree.GameTree;
 import com.ajea.minigames.*;
 import com.ajea.minigames.trivia.Trivia;
 
@@ -19,7 +21,7 @@ public class Main {
     public static final Player PLAYER = new Player();
 
     public static void main(String[] args){
-        //Main class
+        //Run minigames  
         List<Minigame> minigames = new LinkedList<>(Arrays.asList(new Trivia(), new DatingSim(), new FindNumbers(), new TypingTest(), new VibeCheck()));
         for(int i = 0; i < 2; i++){
             int index = (int) (Math.random()  * minigames.size());
@@ -28,5 +30,13 @@ public class Main {
             //Remove played minigame to ensure that it isn't repeated
             minigames.remove(index);
         }
+        //Create the game tree
+        GameTree game = new GameTree("choices.json").initTree();
+        //Run the game
+        runGame(game);
+    }
+
+    private static void runGame(GameTree game){
+
     }
 }
