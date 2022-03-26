@@ -16,7 +16,11 @@ public class Trivia implements Minigame {
             new TriviaQuestion("What is the William & Mary student:faculty ratio?", new String[]{"12:1", "13:1", "14:1"}, 1),
             new TriviaQuestion("Which of these people was not a William & Mary chancellor?", new String[]{"George Washington", "John Adams", "Margaret Thatcher"}, 2),
             new TriviaQuestion("William & Mary is designated as a \"Public Ivy\". Which of these other schools is also a public ivy?", new String[]{"Miami University", "University of Washington", "University of Colorado: Boulder"}, 1),
-            new TriviaQuestion("Which of these programs was W&M the first university to offer?", new String[]{"1693", "1727", "1779"}, 3)
+            new TriviaQuestion("Which of these programs was W&M the first university to offer?", new String[]{"Philosophy", "Religious Studies", "Modern Languages"}, 3),
+            new TriviaQuestion("When did William & Mary officially become a university?", new String[]{"1693", "1727", "1779"}, 3),
+            new TriviaQuestion("What percentage of classes at William & Mary have fewer than 40 students?", new String[]{"78%", "82%", "86%"}, 3),
+            new TriviaQuestion("According to Rate My Professors, which of these aspects of William & Mary has the highest rating?", new String[]{"Opportunity", "Facilities", "Happiness"}, 3),
+            new TriviaQuestion("Which of these locations do not accept W&M Express as payment?", new String[]{"Five Guys", "Panera", "Which Wich"}, 3)
     ));
 
     /**
