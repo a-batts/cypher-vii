@@ -4,7 +4,7 @@ import com.ajea.enums.SkillLevel;
 
 import java.util.Scanner;
 
-public class TypingTest {
+public class TypingTest implements Minigame {
     // Color Constants of Console Text
     final String ANSI_RESET = "\u001B[0m"; // Reset to consoles default.
     final String ANSI_BLUE = "\u001B[34m";
