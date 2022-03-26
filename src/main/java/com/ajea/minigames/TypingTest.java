@@ -1,17 +1,13 @@
 package com.ajea.minigames;
 
+import com.ajea.Main;
 import com.ajea.enums.SkillLevel;
 
 import java.util.Scanner;
 
+import static com.ajea.Main.*;
+
 public class TypingTest implements Minigame {
-    // Color Constants of Console Text
-    final String ANSI_RESET = "\u001B[0m"; // Reset to consoles default.
-    final String ANSI_BLUE = "\u001B[34m";
-    final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
-    final String ANSI_WHITE = "\u001B[37m";
-    final String ANSI_RED = "\u001B[31m";
-    final String ANSI_GREEN = "\u001B[32m";
 
     int score = 0, promptIndex = 0;
     final String[] PROMPTS = {
@@ -24,6 +20,7 @@ public class TypingTest implements Minigame {
     };
     final Scanner input = new Scanner(System.in); // Scanner for easy handling of user input
 
+    public String gameSkill = "coordination";
 
     /**
      * Starts the typing test. Goes through each prompt, and asks the user to type it, checks if they're correct, gives feedback,

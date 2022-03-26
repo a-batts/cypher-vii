@@ -21,6 +21,8 @@ public class VibeCheck extends JPanel implements Minigame{
         cur = (int)(images.length*Math.random());
     }
 
+    public String gameSkill = "intuition";
+
     @Override
     public SkillLevel start() {
         int score = 0;

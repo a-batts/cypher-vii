@@ -19,9 +19,11 @@ public class Trivia implements Minigame {
             new TriviaQuestion("Which of these programs was W&M the first university to offer?", new String[]{"Philosophy", "Religious Studies", "Modern Languages"}, 3),
             new TriviaQuestion("When did William & Mary officially become a university?", new String[]{"1693", "1727", "1779"}, 3),
             new TriviaQuestion("What percentage of classes at William & Mary have fewer than 40 students?", new String[]{"78%", "82%", "86%"}, 3),
-            new TriviaQuestion("According to Rate My Professors, which of these aspects of William & Mary has the highest rating?", new String[]{"Opportunity", "Facilities", "Happiness"}, 3),
-            new TriviaQuestion("Which of these locations do not accept W&M Express as payment?", new String[]{"Five Guys", "Panera", "Which Wich"}, 3)
+            new TriviaQuestion("According to Rate My Professors, which of these aspects of William & Mary has the highest rating?", new String[]{"Opportunity", "Facilities", "Happiness"}, 2),
+            new TriviaQuestion("Which of these locations do not accept W&M Express as payment?", new String[]{"Five Guys", "Panera", "Which Wich"}, 1)
     ));
+
+    public String gameSkill = "intelligence";
 
     /**
      * Starts the trivia minigame. Prompts user with 5 random trivia questions and counts how many they get right.
@@ -41,7 +43,7 @@ public class Trivia implements Minigame {
             else
                 System.out.println("Incorrect answer");
             //Remove solved question to prevent a user getting re-prompted with the same question
-            QUESTIONS_BANK.remove(0);
+            QUESTIONS_BANK.remove(selectedQ);
             System.out.println();
         }
 
