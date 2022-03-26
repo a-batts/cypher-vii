@@ -13,7 +13,6 @@ public class Prompt {
      */
     //Usage for this class would be int i = Prompt.promptUser(...)
     public static int promptUser(String prompt, String[] choices){
-        Scanner scan = new Scanner(System.in);
         //Print out question
         System.out.println(prompt);
         System.out.println();
@@ -25,7 +24,7 @@ public class Prompt {
         //Loop until user picks a valid choice
         while(selected <= 0 || selected > choices.length){
             try{
-                selected = scan.nextInt();
+                selected = Main.scan.nextInt();
                 if (selected <= 0 || selected > choices.length)
                     System.out.println("Please enter a valid option");
             }
@@ -33,7 +32,7 @@ public class Prompt {
             catch(InputMismatchException ignored){
                 System.out.println("Please enter a valid option");
                 //Consume token so infinite loop does not occur
-                scan.nextLine();
+                Main.scan.nextLine();
             }
         }
         return selected;
