@@ -23,6 +23,8 @@ public class Trivia implements Minigame {
             new TriviaQuestion("Which of these locations do not accept W&M Express as payment?", new String[]{"Five Guys", "Panera", "Which Wich"}, 3)
     ));
 
+    public String gameSkill = "intelligence";
+
     /**
      * Starts the trivia minigame. Prompts user with 5 random trivia questions and counts how many they get right.
      * @return SkillLevel

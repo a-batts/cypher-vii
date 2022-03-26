@@ -19,6 +19,8 @@ public class VibeCheck extends JPanel implements Minigame{
 
     }
 
+    public String gameSkill = "intuition";
+
     @Override
     public SkillLevel start() {
         int score = 0;
