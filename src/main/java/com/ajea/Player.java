@@ -12,7 +12,8 @@ public class Player {
         skills.put("intelligence", SkillLevel.LOW);
         skills.put("intuition", SkillLevel.LOW);
         skills.put("vibe check", SkillLevel.LOW);
-        //Fill in the other skill levels
+        skills.put("coordination", SkillLevel.LOW);
+        skills.put("charisma", SkillLevel.LOW);
     }
 
     public void setSkill(String skillName, SkillLevel level){
