@@ -26,6 +26,7 @@ public class Prompt {
             //Catch non-int input
             catch(InputMismatchException ignored){
                 System.out.println("Please enter a valid option");
+                scan.nextLine();
             }
         }
         return selected;
