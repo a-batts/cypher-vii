@@ -1,4 +1,10 @@
 package com.ajea.minigames;
 
-public class VibeCheck {
+import com.ajea.Enums.SkillLevel;
+
+public class VibeCheck implements Minigame {
+    @Override
+    public SkillLevel start() {
+        return null;
+    }
 }

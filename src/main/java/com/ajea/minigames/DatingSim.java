@@ -1,4 +1,10 @@
 package com.ajea.minigames;
 
-public class DatingSim {
+import com.ajea.Enums.SkillLevel;
+
+public class DatingSim implements Minigame {
+    @Override
+    public SkillLevel start() {
+        return null;
+    }
 }
