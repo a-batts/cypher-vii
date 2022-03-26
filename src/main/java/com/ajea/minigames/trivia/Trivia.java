@@ -1,6 +1,6 @@
 package com.ajea.minigames.trivia;
 
-import com.ajea.Enums.SkillLevel;
+import com.ajea.enums.SkillLevel;
 import com.ajea.minigames.Minigame;
 
 import java.util.Arrays;
