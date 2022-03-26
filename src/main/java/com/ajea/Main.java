@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args){
         //Main class
         TypingTest typingTest = new TypingTest();
-        typingTest.start();
+        System.out.println(typingTest.start());
 
     }
 }
