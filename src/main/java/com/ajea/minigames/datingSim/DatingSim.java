@@ -7,6 +7,7 @@ import static com.ajea.Prompt.promptUser;
 
 public class DatingSim {
     private DatingQuestion[] datingQuestions;
+    public String gameSkill = "charm";
 
     public DatingSim() {
         setupQuestions();
