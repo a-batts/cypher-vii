@@ -1,12 +1,13 @@
 package com.ajea.minigames.trivia;
 
 import com.ajea.Enums.SkillLevel;
+import com.ajea.minigames.Minigame;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Trivia {
+public class Trivia implements Minigame {
     public SkillLevel start(){
         int correctQuestions = 0;
         intro();
