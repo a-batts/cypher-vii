@@ -13,7 +13,7 @@ public class Prompt {
         System.out.println();
         //Print out all choices
         for(int i = 1; i <= choices.length; i++){
-            System.out.println(i + ": " + choices[i]);
+            System.out.println(i + ": " + choices[i-1]);
         }
         int selected = 0;
         //Loop until user picks a valid choice
