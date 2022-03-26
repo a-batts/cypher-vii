@@ -1,4 +1,10 @@
 package com.ajea.minigames;
 
-public class FindNumbers {
+import com.ajea.Enums.SkillLevel;
+
+public class FindNumbers implements Minigame {
+    @Override
+    public SkillLevel start() {
+        return null;
+    }
 }
