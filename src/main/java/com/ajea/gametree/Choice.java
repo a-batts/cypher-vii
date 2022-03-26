@@ -1,6 +1,6 @@
 package com.ajea.gametree;
 
-import com.ajea.Enums.SkillLevel;
+import com.ajea.enums.SkillLevel;
 
 public class Choice {
     public final String skill;

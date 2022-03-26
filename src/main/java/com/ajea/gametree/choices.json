@@ -1,0 +1,16 @@
+{
+  "choices": [
+    {
+      "text": "Rock",
+      "value": "rock"
+    },
+    {
+      "text": "Paper",
+      "value": "paper"
+    },
+    {
+      "text": "Scissors",
+      "value": "scissors"
+    }
+  ]
+}

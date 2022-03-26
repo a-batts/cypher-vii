@@ -1,4 +1,4 @@
-import com.ajea.Enums.SkillLevel;
+import com.ajea.enums.SkillLevel;
 import com.ajea.minigames.trivia.Trivia;
 
 public class TestTrivia {

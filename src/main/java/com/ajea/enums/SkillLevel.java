@@ -1,4 +1,4 @@
-package com.ajea.Enums;
+package com.ajea.enums;
 
 public enum SkillLevel {
     LOW(0), MEDIUM(1), HIGH(2);
