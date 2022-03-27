@@ -15,7 +15,9 @@ public class Main {
     public static final String ANSI_BLUE = "\u001B[34m";
     public static final String ANSI_BLUE_BACKGROUND = "\u001B[44m";
     public static final String ANSI_WHITE = "\u001B[37m";
-    public static final String ANSI_RED = "\u001B[31m";    public static final String ANSI_GREEN = "\u001B[32m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
+    public static final String ANSI_GREEN = "\u001B[32m";
     public static Scanner scan = new Scanner(System.in);
 
     public static final Player PLAYER = new Player();
