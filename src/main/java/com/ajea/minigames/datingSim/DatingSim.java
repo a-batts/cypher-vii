@@ -75,12 +75,15 @@ public class DatingSim {
                 int answer4 = promptUser(datingQuestions[currentQuestion].question(), datingQuestions[currentQuestion].options());
                 if (answer4 == 1) {
                     currentQuestion = 99; // Game ends but wrong choice.
+                    System.out.println("You see a movie with your crush. It’s mildly entertaining, but you quickly learn you’ve made a mistake as you realize that actually talking to your crush would be much more fun than sitting in the dark with them for two hours. You continue to hang out with them often, but just as friends – nothing more. Maybe it’s for the better! Total score: 10/15");
                 } else if (answer4 == 2) {
                     currentQuestion = 99; // Game ends but wrong choice.
                     score += 2;
+                    System.out.println("You and your crush go to Noodles & Co. You have a good time eating your pasta, but you get some sauce on your shirt! Regardless, you make plans for another date with your crush, and you can’t wait to go out with them again. Congratulations! Total score: 12/15");
                 } else if (answer4 == 3) {
                     currentQuestion = 99; // Game ends, FANTASTIC CHOICE!
                     score += 5;
+                    System.out.println("You and your crush go to the farmers market, and it couldn’t be more perfect. The weather is beautiful, and both of you have a lovely time. The date goes wonderfully, and you’ve even made plans for the next one by the end! Congratulations, you’ve wooed your crush! Total score: 15/15");
                 }
             }
         }

@@ -2,6 +2,7 @@ package com.ajea;
 
 import com.ajea.gametree.GameTree;
 import com.ajea.minigames.*;
+import com.ajea.minigames.datingSim.DatingSim;
 import com.ajea.minigames.trivia.Trivia;
 
 import java.util.Arrays;
