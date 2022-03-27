@@ -1,34 +1,50 @@
 package com.ajea.gametree;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import com.ajea.FileLoader;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class GameTree {
-    private File dialogFile;
+    private JsonObject choices;
     private final TreeNode root = new TreeNode();
 
     public GameTree(String fileName){
-        //Try and load resources file
-        try{ setFile(fileName); }
-        catch(FileNotFoundException e){
-            System.out.println("Error - resources were not able to be loaded");
-        }
+        FileLoader fl = new FileLoader().loadJSON(fileName);
+        choices = fl.asJsonObject();
     }
 
     public GameTree initTree(){
-        //NEED TO IMPLEMENT
-        //Read from json file and import everything into tree nodes
-        File dialog = dialogFile;
-
+        //Initialize first node
+        TreeNode current = this.root;
+        setData(current, 1);
+        //Initialize the rest of the story line once it is done
 
         return this;
     }
 
-    private void setFile(String fileName) throws FileNotFoundException {
-        File f = new File(fileName);
-        if (f.exists())
-            dialogFile = f;
-        else
-            throw new FileNotFoundException();
+    /**
+     * Set the prompt and choices for a TreeNode
+     * @param node TreeNode
+     * @param index index of JSON line
+     */
+    private void setData(TreeNode node, int index){
+        String prompt = choices.get(Integer.toString(index)).getAsJsonArray().get(0).getAsJsonObject().get("prompt").toString();
+        Choice[] choices = getChoices(index);
+        node.setData(prompt, choices);
+    }
+
+    private Choice[] getChoices(int index){
+        JsonArray currentObject = choices.get(Integer.toString(index)).getAsJsonArray().get(0).getAsJsonObject().get("choices").getAsJsonArray();
+        ArrayList<Choice> choices = new ArrayList<>();
+        for(JsonElement e: currentObject){
+            JsonObject arr = e.getAsJsonObject();
+            choices.add(new Choice(arr.get("skill").toString()).setChoices(arr.get("short").toString(), arr.get("medium").toString(), arr.get("long").toString()));
+        }
+
+        return choices.toArray(new Choice[0]);
     }
 }

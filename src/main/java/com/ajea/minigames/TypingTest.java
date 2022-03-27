@@ -107,7 +107,7 @@ public class TypingTest implements Minigame {
         System.out.println(
                 goodOrBad ?
                         ANSI_GREEN + "^_^ Good job! " + ANSI_RESET + (promptIndex+1) + "/" + PROMPTS.length
-                        : ANSI_RED + "-_- Uh-oh... not very coordinated ❌. Do better! " + ANSI_RESET + (promptIndex+1) + "/" + PROMPTS.length
+                        : ANSI_RED + "-_- Uh-oh... not very coordinated. Do better! " + ANSI_RESET + (promptIndex+1) + "/" + PROMPTS.length
         );
     }
 

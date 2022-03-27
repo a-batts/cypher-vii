@@ -15,9 +15,8 @@ public class TreeNode {
 
     public TreeNode(){}
 
-    public TreeNode(TreeNode left, TreeNode middle, TreeNode right){
+    public TreeNode(TreeNode left, TreeNode right){
         this.left = left;
-        this.middle = middle;
         this.right = right;
     }
 
@@ -29,20 +28,17 @@ public class TreeNode {
         this.left = left;
     }
 
-    public TreeNode getMiddle() {
-        return middle;
-    }
-
-    public void setMiddle(TreeNode middle) {
-        this.middle = middle;
-    }
-
     public TreeNode getRight() {
         return right;
     }
 
     public void setRight(TreeNode right) {
         this.right = right;
+    }
+
+    public void setData(String prompt, Choice[] choices){
+        this.prompt = prompt;
+        this.choices = choices;
     }
 
     public String[] getChoices(){
