@@ -17,7 +17,7 @@ public class FindNumbers extends JPanel implements Minigame {
                             {91,26,1,13,47,3,10,8,17,21},
                             {41,92,40,13,33,18,16,12,98,28},
                             {5,20,63,10,2,64,27,56,11,36}};
-    private final String prompt = "Find as many of the words as you can within 10 seconds!";
+    private final String prompt = "Find as many of the numbers as you can within 10 seconds!";
     private int cur;
 
     public FindNumbers(){
@@ -25,7 +25,7 @@ public class FindNumbers extends JPanel implements Minigame {
     }
 
     public void paintComponent(Graphics g){
-        ImageIcon senario = new ImageIcon("find_num"+cur+".png");
+        ImageIcon senario = new ImageIcon("findnumbers"+cur+".png");
         g.drawImage(senario.getImage(), 0,0, maxWidth, maxHeight, null);
     }
 
@@ -47,7 +47,7 @@ public class FindNumbers extends JPanel implements Minigame {
         }
         int score = countCorrectNumbers(userNums, numbers);
 
-        return score >= 7 && timeTaken < 15000;
+        return score >= 7 && timeTaken < 10000;
     }
 
     private SkillLevel skillLevel(int score){
