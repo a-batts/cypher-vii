@@ -1,25 +1,14 @@
 {
   "1": [{
-    "prompt": "idkkkk",
-    "choices": [
-      {
-        "short": "short for skill",
-        "medium": "medium for skill",
-        "long": "long for skill",
-        "skill": "skill name"
-      },
-      {
-        "short": "short for skill",
-        "medium": "medium for skill",
-        "long": "long for skill",
-        "skill": "skill name"
-      },
-      {
-        "short": "short for skill",
-        "medium": "medium for skill",
-        "long": "long for skill",
-        "skill": "skill name"
-      }
-    ]
+    "prompts": [{
+      "short": "short for skill",
+      "medium": "medium for skill",
+      "long": "long for skill",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "first choice",
+      "b": "second choice"
+    }]
   }]
 }

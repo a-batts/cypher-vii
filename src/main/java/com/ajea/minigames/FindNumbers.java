@@ -4,9 +4,11 @@ import com.ajea.enums.SkillLevel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Scanner;
 
-public class FindNumbers extends JPanel implements Minigame {
+public class FindNumbers extends JPanel implements Minigame, ActionListener {
     public String gameSkill = "observation";
     private static final int maxHeight = 1500;
     private static final int maxWidth = 900;
@@ -17,7 +19,7 @@ public class FindNumbers extends JPanel implements Minigame {
                             {91,26,1,13,47,3,10,8,17,21},
                             {41,92,40,13,33,18,16,12,98,28},
                             {5,20,63,10,2,64,27,56,11,36}};
-    private final String prompt = "Find as many of the words as you can within 10 seconds!";
+    private final String prompt = "Find as many of the numbers as you can within 10 seconds!";
     private int cur;
 
     public FindNumbers(){
@@ -25,7 +27,7 @@ public class FindNumbers extends JPanel implements Minigame {
     }
 
     public void paintComponent(Graphics g){
-        ImageIcon senario = new ImageIcon("find_num"+cur+".png");
+        ImageIcon senario = new ImageIcon("findnumbers"+cur+".png");
         g.drawImage(senario.getImage(), 0,0, maxWidth, maxHeight, null);
     }
 
@@ -47,7 +49,7 @@ public class FindNumbers extends JPanel implements Minigame {
         }
         int score = countCorrectNumbers(userNums, numbers);
 
-        return score >= 7 && timeTaken < 15000;
+        return score >= 7 && timeTaken < 10000;
     }
 
     private SkillLevel skillLevel(int score){
@@ -69,5 +71,20 @@ public class FindNumbers extends JPanel implements Minigame {
             repaint();
         }
         return skillLevel(score);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        JPanelInput jinput = new JPanelInput("Find Numbers", prompt);
+    }
+
+    public static void main(String[] args){
+        JFrame frame = new JFrame("Find Numbers");
+        frame.setSize(900, 900);
+        frame.setLocation(0,0);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        FindNumbers fn = new FindNumbers();
+        fn.start();
     }
 }
