@@ -50,7 +50,7 @@ public class GameTree {
         setData(i, 9);
         setData(j, 14);
         d.setLeft(i);
-        d.setLeft(j);
+        d.setRight(j);
 
         l = new TreeNode();
         setData(l,10);
