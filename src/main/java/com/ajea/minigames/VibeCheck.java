@@ -7,7 +7,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
-
 public class VibeCheck extends JPanel implements Minigame{
     public final String gameSkill = "intuition";
     private final String[] images = {"chair1.png", "kitchen1.png", "chair2.png","kitchen2.png"};
