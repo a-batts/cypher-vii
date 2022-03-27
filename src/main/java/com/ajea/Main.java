@@ -25,15 +25,7 @@ public class Main {
     public static final Player PLAYER = new Player();
 
     public static void main(String[] args){
-        //Run minigames
-        LinkedList<Minigame> minigames = new LinkedList<>(Arrays.asList(new Trivia(), new DatingSim(), new FindNumbers(), new TypingTest(), new VibeCheck()));
-        for(int i = 0; i < 2; i++){
-            int index = (int) (Math.random()  * minigames.size());
-            Minigame selectedMinigame = minigames.get(index);
-            PLAYER.setSkill(selectedMinigame.gameSkill, selectedMinigame.start());
-            //Remove played minigame to ensure that it isn't repeated
-            minigames.remove(index);
-        }
+
         //Create the game tree
         GameTree game = new GameTree("src/main/resources/choices.json").initTree();
         runGame(game);
@@ -44,9 +36,9 @@ public class Main {
         TreeNode current = game.getRoot();
         while(current.left != null && current.right != null){
             int sel = Prompt.promptUser(current.prompt, current.choices);
-            if(sel == 0)
+            if(sel == 1)
                 current = current.left;
-            else if(sel == 1)
+            else if(sel == 2)
                 current = current.right;
         }
         System.out.println(current.prompt);
