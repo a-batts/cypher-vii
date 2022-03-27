@@ -47,6 +47,9 @@ public class Trivia implements Minigame {
             System.out.println();
         }
 
+        System.out.println("You got " + correctQuestions + "/5 questions right!");
+        System.out.println();
+
         //Return user's skill level based on how many questions they get correct
         return switch (correctQuestions) {
             case 2, 3 -> SkillLevel.MEDIUM;
