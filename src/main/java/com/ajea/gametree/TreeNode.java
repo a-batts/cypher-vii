@@ -3,8 +3,8 @@ package com.ajea.gametree;
 import static com.ajea.Main.PLAYER;
 
 public class TreeNode {
-    private TreeNode left = null;
-    private TreeNode right = null;
+    public TreeNode left = null;
+    public TreeNode right = null;
 
     //Optional game dialog displayed before prompt
     public String dialog;
