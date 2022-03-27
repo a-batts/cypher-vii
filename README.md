@@ -1,10 +1,11 @@
 # [Cypher VII](https://cypher-vii.devpost.com/): Project Submission
 
-## Purpose
+![](src/main/resources/section-purpose.png)
 
-## About the Game
+![](src/main/resources/section-about.png)
 
-## Project Structure
+![](src/main/resources/section-structure.png)  
+
 | Folder    	 | File            	 | Note/Purpose                      	 |
 |-------------|-------------------|-------------------------------------|
 | Enums     	 | SkillLevel.java 	 | Unify SkillLevel among minigames. 	 |
@@ -26,7 +27,7 @@ The better you do, the more information you'll get during the story.
 | Vibe Check       	 | Intuition    	 |
 
 
-## Authors
+![](src/main/resources/section-author.png)
 [Alex Batts](mailto:ajbatts@wm.edu) (Computer Science '25)  
 [Angela Sullivan](mailto:arsullivan@wm.edu) (Computer Science '25)   
 [Jason LaPierre](mailto:jalapierre@wm.edu)  (Biology '25)  
