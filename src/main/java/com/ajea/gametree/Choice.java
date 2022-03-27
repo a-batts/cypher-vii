@@ -20,4 +20,12 @@ public class Choice {
             default -> lowSkillChoice;
         };
     }
+
+    public Choice setChoices(String low, String mid, String high){
+        lowSkillChoice = low;
+        midSkillChoice = mid;
+        highSkillChoice = high;
+
+        return this;
+    }
 }
