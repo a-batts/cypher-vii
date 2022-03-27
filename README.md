@@ -13,11 +13,23 @@ Eibert wakes up suddenly at Griffin's place, only to find out it's 2022. Let's s
 
 ![](src/main/resources/section-structure.png)  
 
-| Folder    	 | File            	 | Note/Purpose                      	 |
-|-------------|-------------------|-------------------------------------|
-| Enums     	 | SkillLevel.java 	 | Unify SkillLevel among minigames. 	 |
-| Minigames 	 | TypingTest      	 | 	                                   |
-| 	           | 	                 | 	                                   |
+| Folder    	          | File            	 | Note/Purpose                      	                                                      |
+|----------------------|-------------------|------------------------------------------------------------------------------------------|
+| Enums     	          | SkillLevel.java 	 | Standardize SkillLevel of each attribute. 	                                              |
+| Minigames\datingSim	 | 	DatingQuestion   | Record to standardize prompt and choices	                                                |
+| Minigames\datingSim  | DatingSim         | Core mini-game. `.start()`                                                               |
+| Minigames\trivia     | TriviaQuestion    | Class to standardize prompt and choices.                                                 |
+| Minigames\trivia     | Trivia            | Core mini-game. `.start()`                                                               |
+| Minigames            | FindNumbers       | Core mini-game. `.start()`                                                               |
+| Minigames            | JPanelInput       | Creates GUI with input fields that are returned. Used for `FindNumbers` and `VibeCheck`. |
+| Minigames            | Minigame          | Interface to standardize flow of each mini-game via `.start()`.                          |
+| Minigames            | TypingTest        | Core mini-game. `.start()`                                                               |
+| Minigames            | VibeCheck         | Core mini-game. `.start()`                                                               |
+| Gametree             | GameTree          | Binary tree implementation for story progression.                                        |
+| Gametree             | TreeNode          | Binary tree node for usage in the `GameTree` class.                                      |
+| main                 | FileLoader        | Loads JSON files and returns them as JsonObjects or strings.                             |
+| main                 | Player            | Class that manages all attributes of the player.                                         |
+| main                 | Prompt            | Class that standardizes getting user input with a single question and a list of choices. |
 
 ![](src/main/resources/section-minigames.png) 
 ### Mini-games dictate the information revealed.
