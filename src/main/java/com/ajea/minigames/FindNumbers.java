@@ -4,9 +4,11 @@ import com.ajea.enums.SkillLevel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Scanner;
 
-public class FindNumbers extends JPanel implements Minigame {
+public class FindNumbers extends JPanel implements Minigame, ActionListener {
     public String gameSkill = "observation";
     private static final int maxHeight = 1500;
     private static final int maxWidth = 900;
@@ -69,5 +71,20 @@ public class FindNumbers extends JPanel implements Minigame {
             repaint();
         }
         return skillLevel(score);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        JPanelInput jinput = new JPanelInput("Find Numbers", prompt);
+    }
+
+    public static void main(String[] args){
+        JFrame frame = new JFrame("Find Numbers");
+        frame.setSize(900, 900);
+        frame.setLocation(0,0);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        FindNumbers fn = new FindNumbers();
+        fn.start();
     }
 }

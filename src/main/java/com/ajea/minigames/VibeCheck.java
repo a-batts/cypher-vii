@@ -5,7 +5,8 @@ import com.ajea.Prompt;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.Scanner;
+import java.awt.event.ActionEvent;
+
 
 public class VibeCheck extends JPanel implements Minigame{
     public final String gameSkill = "intuition";
@@ -28,6 +29,8 @@ public class VibeCheck extends JPanel implements Minigame{
         for(int i=0; i <3; i++){
             if (cur == images.length-1 ) cur++;
             else cur = 0;
+            System.out.println(cur);
+            System.out.println(cur/2);
             if (test(prompts[cur/2], options[cur/2], answers[cur/2])){
                 score++;
             }
@@ -57,5 +60,18 @@ public class VibeCheck extends JPanel implements Minigame{
         else return SkillLevel.LOW;
     }
 
+    public void actionPerformed(ActionEvent e) {
+        JPanelInput jinput = new JPanelInput("Vibe Check", prompts[cur]);
+    }
+
+    public static void main(String args[]){
+        JFrame frame = new JFrame("Vibe Check");
+        frame.setSize(900, 900);
+        frame.setLocation(0,0);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        VibeCheck vc = new VibeCheck();
+        vc.start();
+    }
 }
 
