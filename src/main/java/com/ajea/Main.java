@@ -25,7 +25,15 @@ public class Main {
     public static final Player PLAYER = new Player();
 
     public static void main(String[] args){
-
+        //Run minigames
+        LinkedList<Minigame> minigames = new LinkedList<>(Arrays.asList(new Trivia(), new DatingSim(), new FindNumbers(), new TypingTest(), new VibeCheck()));
+        for(int i = 0; i < 2; i++){
+            int index = (int) (Math.random()  * minigames.size());
+            Minigame selectedMinigame = minigames.get(index);
+            PLAYER.setSkill(selectedMinigame.gameSkill, selectedMinigame.start());
+            //Remove played minigame to ensure that it isn't repeated
+            minigames.remove(index);
+        }
         //Create the game tree
         GameTree game = new GameTree("src/main/resources/choices.json").initTree();
         runGame(game);
