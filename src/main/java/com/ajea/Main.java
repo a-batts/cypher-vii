@@ -1,6 +1,7 @@
 package com.ajea;
 
 import com.ajea.gametree.GameTree;
+import com.ajea.gametree.TreeNode;
 import com.ajea.minigames.*;
 import com.ajea.minigames.datingSim.DatingSim;
 import com.ajea.minigames.trivia.Trivia;
@@ -25,7 +26,7 @@ public class Main {
 
     public static void main(String[] args){
         //Run minigames
-        List<Minigame> minigames = new LinkedList<>(Arrays.asList(new Trivia(), new DatingSim(), new FindNumbers(), new TypingTest(), new VibeCheck()));
+        LinkedList<Minigame> minigames = new LinkedList<>(Arrays.asList(new Trivia(), new DatingSim(), new FindNumbers(), new TypingTest(), new VibeCheck()));
         for(int i = 0; i < 2; i++){
             int index = (int) (Math.random()  * minigames.size());
             Minigame selectedMinigame = minigames.get(index);
@@ -40,6 +41,14 @@ public class Main {
     }
 
     private static void runGame(GameTree game){
-
+        TreeNode current = game.getRoot();
+        while(current.left != null && current.right != null){
+            int sel = Prompt.promptUser(current.prompt, current.choices);
+            if(sel == 0)
+                current = current.left;
+            else if(sel == 1)
+                current = current.right;
+        }
+        System.out.println(current.prompt);
     }
 }
