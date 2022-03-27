@@ -1,14 +1,242 @@
 {
   "1": [{
     "prompts": [{
-      "short": "short for skill",
-      "medium": "medium for skill",
-      "long": "long for skill",
+      "short": "You wake up in your home under Zable Stadium, ready for another day of being the peppiest mascot William & Mary has ever seen. You stretch and prepare to start your day, and wonder what to do first.",
+      "medium": "You wake up in your home under Zable Stadium, ready for another day of being the peppiest mascot William & Mary has ever seen. You stretch and prepare to start your day, and wonder what to do first. You notice a placard on the wall with the date 2016.",
+      "long": "You wake up in your home under Zable Stadium, ready for another day of being the peppiest mascot William & Mary has ever seen. You stretch and prepare to start your day, and wonder what to do first. You notice a placard on the wall with the date 2016 which you certainly don’t remember living through. You feel you should inspect it.",
+      "skill": "observation"
+    }],
+    "choices": [{
+      "a": "Walk outside and take your morning stroll",
+      "b": "Stay inside for now and tidy your home a little more"
+    }]
+  }],
+  "2": [{
+    "prompts": [{
+      "short": "You emerge into the sunlight and immediately notice things are a little different than they were yesterday. You see more buildings around you and they look… off. Even the stadium looks different from the outside!",
+      "medium": "You emerge into the sunlight and immediately notice things are a little different than they were yesterday. You see more buildings around you and they look… off. Even the stadium looks different from the outside! The Sadler Center has lots of W&M staff inside.",
+      "long": "You emerge into the sunlight and immediately notice things are a little different than they were yesterday. You see more buildings around you and they look… off. Even the stadium looks different from the outside! The Sadler Center has lots of W&M staff inside. You can definitely ask them what’s going on.",
+      "skill": "intelligence"
+    }],
+    "choices": [{
+      "a": "Inspect the stadium",
+      "b": "Inspect the Sadler Center"
+    }]
+  }],
+  "3": [{
+    "prompts": [{
+      "short": "As you examine your belongings and make sure everything is in order, you come across quite a few things you don’t quite remember buying, in addition to lots of mementos that are seemingly from the future!",
+      "medium": "As you examine your belongings and make sure everything is in order, you come across quite a few things you don’t quite remember buying, in addition to lots of mementos that are seemingly from the future! This doesn't feel as familiar as it should",
+      "long": "As you examine your belongings and make sure everything is in order, you come across quite a few things you don’t quite remember buying, in addition to lots of mementos that are seemingly from the future! This doesn’t feel as familiar as it should, almost as if the room belongs to someone else.",
+      "skill": "intuition"
+    }],
+    "choices": [{
+      "a": "Finish up and go outside, worry about this after you’ve gotten some fresh air",
+      "b": "Keep looking around and figure out what’s going on"
+    }]
+  }],
+  "4": [{
+    "prompts": [{
+      "short": "As you walk around the stadium, you notice the massive renovation that has seemingly taken place overnight. Either something is up with your head, or something is seriously wrong here.",
+      "medium": "As you walk around the stadium, you notice the massive renovation that has seemingly taken place overnight. Either something is up with your head, or something is seriously wrong here. There are a lot of steep steps you’ve never climbed before ",
+      "long": "As you walk around the stadium, you notice the massive renovation that has seemingly taken place overnight. Either something is up with your head, or something is seriously wrong here. There are a lot of steep steps you’ve never climbed before, and you’re not sure it’s safe for you to get up there with your froggy feet.",
+      "skill": "coordination"
+    }],
+    "choices": [{
+      "a": "Go up into the stadium",
+      "b": "Continue around and see if there are any other differences"
+    }]
+  }],
+  "5": [{
+    "prompts": [{
+      "short": "You walk into Sadler, earning many stares from the students around you. There seem to be a lot more of them than usual, and you don’t see any of the usual faces you’re so used to seeing every day.",
+      "medium": "You walk into Sadler, earning many stares from the students around you. There seem to be a lot more of them than usual, and you don’t see any of the usual faces you’re so used to seeing every day. They look a little concerned,",
+      "long": "You walk into Sadler, earning many stares from the students around you. There seem to be a lot more of them than usual, and you don’t see any of the usual faces you’re so used to seeing every day. They look a little concerned, and might get confrontational if you talk to them.",
       "skill": "charm"
     }],
     "choices": [{
-      "a": "first choice",
-      "b": "second choice"
+      "a": "Talk to a group of students",
+      "b": "Keep walking and find a staff member"
+    }]
+  }],
+  "6": [{
+    "prompts": [{
+      "short": "You poke around the room a little more, and keep finding things that aren’t yours. This definitely isn’t your usual forgetfulness.",
+      "medium": "You poke around the room a little more, and keep finding things that aren’t yours. This definitely isn’t your usual forgetfulness. You’re certain this room isn’t yours.",
+      "long": "You poke around the room a little more, and keep finding things that aren’t yours. This definitely isn’t your usual forgetfulness. You’re certain this room isn’t yours. If the person who owns the room comes back, you’re done for.",
+      "skill": "intuition"
+    }],
+    "choices": [{
+      "a": "Get out of here ASAP",
+      "b": "Open drawers and find out who’s moved into your room"
+    }]
+  }],
+  "7": [{
+    "prompts": [{
+      "short": "As you walk up the steps, your froggy feet keep getting in your way. About halfway to the top, you realize these steps seem to be built for a hoofed animal, not a web-footed one! You turn to go back down, but you trip and take a tumble down the stairs. You aren’t hurt, but when someone hears the thumping and comes to see what happened, the shock of the day and the embarrassment of the fall get to you enough that you can’t explain yourself. You end up getting walked to the nearest bus stop and waiting for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "medium": "As you walk up the steps, your froggy feet keep getting in your way. About halfway to the top, you realize these steps seem to be built for a hoofed animal, not a web-footed one! You turn to go back down, but you trip and take a tumble down the stairs. You aren’t hurt, but when someone hears the thumping and comes to see what happened, the shock of the day and the embarrassment of the fall get to you enough that you can’t explain yourself. You end up getting walked to the nearest bus stop and waiting for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "long": "As you walk up the steps, your froggy feet keep getting in your way. About halfway to the top, you realize these steps seem to be built for a hoofed animal, not a web-footed one! You turn to go back down, but you trip and take a tumble down the stairs. You aren’t hurt, but when someone hears the thumping and comes to see what happened, the shock of the day and the embarrassment of the fall get to you enough that you can’t explain yourself. You end up getting walked to the nearest bus stop and waiting for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "8": [{
+    "prompts": [{
+      "short": "You walk around the stadium and notice that there is a statue in the front that, according to a nearby sign, is supposed to be the mascot of William & Mary. However, it is very clearly not you! Instead of a charming, friendly, and fun-loving frog, the statue seems to be of a large, intimidating, and EXTREMELY manly griffin. This feels like a dream… where to next?",
+      "medium": "You walk around the stadium and notice that there is a statue in the front that, according to a nearby sign, is supposed to be the mascot of William & Mary. However, it is very clearly not you! Instead of a charming, friendly, and fun-loving frog, the statue seems to be of a large, intimidating, and EXTREMELY manly griffin. This feels like a dream… where to next? If you’re really in the future, there have to be people who will remember you.",
+      "long": "You walk around the stadium and notice that there is a statue in the front that, according to a nearby sign, is supposed to be the mascot of William & Mary. However, it is very clearly not you! Instead of a charming, friendly, and fun-loving frog, the statue seems to be of a large, intimidating, and EXTREMELY manly griffin. This feels like a dream… where to next? If you’re really in the future, there have to be people who will remember you. There are lots of long-standing staff members on Old Campus.",
+      "skill": "intelligence"
+    }],
+    "choices": [{
+      "a": "Head towards the Sunken Garden",
+      "b": "Head towards Swem Library"
+    }]
+  }],
+  "9": [{
+    "prompts": [{
+      "short": "You approach a group of students and ask how their day is going in your usual charismatic manner. They look at each other and at you in confused silence.",
+      "medium": "You approach a group of students and ask how their day is going in your usual charismatic manner. They look at each other and at you in confused silence. They’re getting a little fidgety",
+      "long": "You approach a group of students and ask how their day is going in your usual charismatic manner. They look at each other and at you in confused silence. They’re getting a little fidgety, so you should probably just walk away.",
+      "skill": "observation"
+    }],
+    "choices": [{
+      "a": "Repeat your greeting louder! These kids need some good old-fashioned Ebirt spirit!",
+      "b": "Move on and continue your search for someone who knows what on earth is going on"
+    }]
+  }],
+  "10": [{
+    "prompts": [{
+      "short": "As you continue going through the room looking for clues, you make quite a bit of noise (your frog hands aren’t the stealthiest!) Enough noise, in fact, that you don’t hear racing footsteps approaching until you see a large, intimidating, EXTREMELY manly Griffin standing in the doorway! Completely frozen in shock and fear, you let yourself be dragged out of the room that is clearly not yours anymore. Griffin asks you who you are and what on earth you’re doing in his room, but you’re so stunned you can’t even reply. At your lack of response, Griffin continues leading you off campus. Defeated, you sit on the curb where he leaves you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(\n",
+      "medium": "As you continue going through the room looking for clues, you make quite a bit of noise (your frog hands aren’t the stealthiest!) Enough noise, in fact, that you don’t hear racing footsteps approaching until you see a large, intimidating, EXTREMELY manly Griffin standing in the doorway! Completely frozen in shock and fear, you let yourself be dragged out of the room that is clearly not yours anymore. Griffin asks you who you are and what on earth you’re doing in his room, but you’re so stunned you can’t even reply. At your lack of response, Griffin continues leading you off campus. Defeated, you sit on the curb where he leaves you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(\n",
+      "long": "As you continue going through the room looking for clues, you make quite a bit of noise (your frog hands aren’t the stealthiest!) Enough noise, in fact, that you don’t hear racing footsteps approaching until you see a large, intimidating, EXTREMELY manly Griffin standing in the doorway! Completely frozen in shock and fear, you let yourself be dragged out of the room that is clearly not yours anymore. Griffin asks you who you are and what on earth you’re doing in his room, but you’re so stunned you can’t even reply. At your lack of response, Griffin continues leading you off campus. Defeated, you sit on the curb where he leaves you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(\n",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "11": [{
+    "prompts": [{
+      "short": "As you walk down the brick paths that lead to the heart of Old Campus, you wait for someone, anyone, to recognize you. Finally, a professor who has been teaching since you’d been around as a mascot the first time sees you from a nearby window and calls your name! He expresses his joy at seeing you again after you’d disappeared so long ago. He rushes you to the President’s House, where President Katherine Rowe reappoints you as the mascot of William & Mary! Congratulations, you completed Ebirt’s Quest! Ending #1: The Kindly Professor\n",
+      "medium": "As you walk down the brick paths that lead to the heart of Old Campus, you wait for someone, anyone, to recognize you. Finally, a professor who has been teaching since you’d been around as a mascot the first time sees you from a nearby window and calls your name! He expresses his joy at seeing you again after you’d disappeared so long ago. He rushes you to the President’s House, where President Katherine Rowe reappoints you as the mascot of William & Mary! Congratulations, you completed Ebirt’s Quest! Ending #1: The Kindly Professor\n",
+      "long": "As you walk down the brick paths that lead to the heart of Old Campus, you wait for someone, anyone, to recognize you. Finally, a professor who has been teaching since you’d been around as a mascot the first time sees you from a nearby window and calls your name! He expresses his joy at seeing you again after you’d disappeared so long ago. He rushes you to the President’s House, where President Katherine Rowe reappoints you as the mascot of William & Mary! Congratulations, you completed Ebirt’s Quest! Ending #1: The Kindly Professor\n",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "12": [{
+    "prompts": [{
+      "short": "When you arrive at Swem, a librarian asks you who you are and why you look like an off-brand Griffin.",
+      "medium": "When you arrive at Swem, a librarian asks you who you are and why you look like an off-brand Griffin. She looks suspicious of you",
+      "long": "When you arrive at Swem, a librarian asks you who you are and why you look like an off-brand Griffin. She looks suspicious of you , and you should just tell her directly what you need.",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "Ask her if she’s read about the famous Colonel Ebirt; she’s a librarian after all, and she should certainly know who you are!",
+      "b": "Tell her you’re lost in time and you need to speak to the President as soon as you can to set things right!"
+    }]
+  }],
+  "13": [{
+    "prompts": [{
+      "short": "The students still do not respond to your greeting. They share a glance, and one of them walks away quickly. As you continue attempting to engage them louder and louder, more passing students look at you – almost fearfully. None of them seem to know who you are. Suddenly, strong arms grab you and you realize you are being escorted away by campus police. You try to explain yourself and tell them that you’re the mascot and you belong on this campus, but they’re not listening. Defeated, you sit on the curb where they leave you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(\n",
+      "medium": "The students still do not respond to your greeting. They share a glance, and one of them walks away quickly. As you continue attempting to engage them louder and louder, more passing students look at you – almost fearfully. None of them seem to know who you are. Suddenly, strong arms grab you and you realize you are being escorted away by campus police. You try to explain yourself and tell them that you’re the mascot and you belong on this campus, but they’re not listening. Defeated, you sit on the curb where they leave you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(\n",
+      "long": "The students still do not respond to your greeting. They share a glance, and one of them walks away quickly. As you continue attempting to engage them louder and louder, more passing students look at you – almost fearfully. None of them seem to know who you are. Suddenly, strong arms grab you and you realize you are being escorted away by campus police. You try to explain yourself and tell them that you’re the mascot and you belong on this campus, but they’re not listening. Defeated, you sit on the curb where they leave you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(\n",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "14": [{
+    "prompts": [{
+      "short": "You walk all the way through the Sadler Center and exit, no wiser than you were when you entered. You realize that in order to set things straight once and for all, you need to find the manly Griffin this school has taken as its mascot in your place. You wonder what the best place to find Griffin might be.",
+      "medium": "You walk all the way through the Sadler Center and exit, no wiser than you were when you entered. You realize that in order to set things straight once and for all, you need to find the manly Griffin this school has taken as its mascot in your place. You wonder what the best place to find Griffin might be. Not all the places Griffin can go are quite as safe for webby frogs like yourself",
+      "long": "You walk all the way through the Sadler Center and exit, no wiser than you were when you entered. You realize that in order to set things straight once and for all, you need to find the manly Griffin this school has taken as its mascot in your place. You wonder what the best place to find Griffin might be. Not all the places Griffin can go are quite as safe for webby frogs like yourself, and too many steps seems a little too dangerous.",
+      "skill": "coordination"
+    }],
+    "choices": [{
+      "a": "The bleachers in Zable Stadium",
+      "b": "Back to the room under Zable"
+    }]
+  }],
+  "15": [{
+    "prompts": [{
+      "short": "The librarian doesn’t take kindly to your flippant air, and thinks you’re a student pulling some sort of prank. Although you start to say that you certainly aren’t pulling any sort of prank and you’re really very confused yourself, she’s not having a word of it. Suddenly, strong arms grab you and you realize you are being escorted away by campus police. You try to explain yourself and tell them that you’re the mascot and you belong on this campus, but they’re not listening. Defeated, you sit on the curb where they leave you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(",
+      "medium": "The librarian doesn’t take kindly to your flippant air, and thinks you’re a student pulling some sort of prank. Although you start to say that you certainly aren’t pulling any sort of prank and you’re really very confused yourself, she’s not having a word of it. Suddenly, strong arms grab you and you realize you are being escorted away by campus police. You try to explain yourself and tell them that you’re the mascot and you belong on this campus, but they’re not listening. Defeated, you sit on the curb where they leave you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(",
+      "long": "The librarian doesn’t take kindly to your flippant air, and thinks you’re a student pulling some sort of prank. Although you start to say that you certainly aren’t pulling any sort of prank and you’re really very confused yourself, she’s not having a word of it. Suddenly, strong arms grab you and you realize you are being escorted away by campus police. You try to explain yourself and tell them that you’re the mascot and you belong on this campus, but they’re not listening. Defeated, you sit on the curb where they leave you, and wait for the next ride out of town. You did not complete Ebirt’s Quest. :(",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "16": [{
+    "prompts": [{
+      "short": "As soon as you finish speaking, it clicks in the librarian's brain: of course she knows who you are, you’re Colonel Ebirt who disappeared mysteriously almost 20 years ago! She is overjoyed to see you back on campus, and apologizes profusely for forgetting at first. She rushes you to the President’s House, where President Katherine Rowe reappoints you as the mascot of William & Mary! Congratulations, you completed Ebirt’s Quest! Ending #2: The Forgetful Librarian",
+      "medium": "As soon as you finish speaking, it clicks in the librarian's brain: of course she knows who you are, you’re Colonel Ebirt who disappeared mysteriously almost 20 years ago! She is overjoyed to see you back on campus, and apologizes profusely for forgetting at first. She rushes you to the President’s House, where President Katherine Rowe reappoints you as the mascot of William & Mary! Congratulations, you completed Ebirt’s Quest! Ending #2: The Forgetful Librarian",
+      "long": "As soon as you finish speaking, it clicks in the librarian's brain: of course she knows who you are, you’re Colonel Ebirt who disappeared mysteriously almost 20 years ago! She is overjoyed to see you back on campus, and apologizes profusely for forgetting at first. She rushes you to the President’s House, where President Katherine Rowe reappoints you as the mascot of William & Mary! Congratulations, you completed Ebirt’s Quest! Ending #2: The Forgetful Librarian",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "18": [{
+    "prompts": [{
+      "short": "You arrive at the stadium and begin ascending the steps, but you don’t see Griffin anywhere.  On the way up, you realize these steps seem to be built for a hoofed animal, not a web-footed one! You decide you should go back to the room you woke up in and see if he’s there, but it’s too late. You turn to go down, but you trip and take a tumble down the stairs. You aren’t hurt, but when someone hears the thumping and comes to see what happened, the shock of the day and the embarrassment of the fall get to you enough that you can’t explain yourself. You end up getting walked to the nearest bus stop and waiting for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "medium": "You arrive at the stadium and begin ascending the steps, but you don’t see Griffin anywhere.  On the way up, you realize these steps seem to be built for a hoofed animal, not a web-footed one! You decide you should go back to the room you woke up in and see if he’s there, but it’s too late. You turn to go down, but you trip and take a tumble down the stairs. You aren’t hurt, but when someone hears the thumping and comes to see what happened, the shock of the day and the embarrassment of the fall get to you enough that you can’t explain yourself. You end up getting walked to the nearest bus stop and waiting for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "long": "You arrive at the stadium and begin ascending the steps, but you don’t see Griffin anywhere.  On the way up, you realize these steps seem to be built for a hoofed animal, not a web-footed one! You decide you should go back to the room you woke up in and see if he’s there, but it’s too late. You turn to go down, but you trip and take a tumble down the stairs. You aren’t hurt, but when someone hears the thumping and comes to see what happened, the shock of the day and the embarrassment of the fall get to you enough that you can’t explain yourself. You end up getting walked to the nearest bus stop and waiting for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "19": [{
+    "prompts": [{
+      "short": "When you arrive at the room under Zable, sure enough, Griffin is there. He is visibly alarmed to see you; he thought he was the only mascot on campus! He asks who you are.",
+      "medium": "When you arrive at the room under Zable, sure enough, Griffin is there. He is visibly alarmed to see you; he thought he was the only mascot on campus! He asks who you are. He seems understanding",
+      "long": "When you arrive at the room under Zable, sure enough, Griffin is there. He is visibly alarmed to see you; he thought he was the only mascot on campus! He asks who you are. He seems understanding, and doesn’t look like he wants any trouble.",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "You introduce yourself and challenge him to a coin toss: the winner becomes the mascot, and the loser leaves campus.",
+      "b": "You introduce yourself and ask if he’d be willing to share the duty of being the William & Mary mascot with you."
+    }]
+  }],
+  "20": [{
+    "prompts": [{
+      "short": "Griffin takes you up on the coin toss, and lets you call the coin. You call tails. However, the odds are simply not in your favor today, and the coin lands heads. Ever a graceful loser, you make good on your end of the deal and leave campus without a fuss, but feeling quite defeated. You walk to the nearest bus stop and wait for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "medium": "Griffin takes you up on the coin toss, and lets you call the coin. You call tails. However, the odds are simply not in your favor today, and the coin lands heads. Ever a graceful loser, you make good on your end of the deal and leave campus without a fuss, but feeling quite defeated. You walk to the nearest bus stop and wait for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "long": "Griffin takes you up on the coin toss, and lets you call the coin. You call tails. However, the odds are simply not in your favor today, and the coin lands heads. Ever a graceful loser, you make good on your end of the deal and leave campus without a fuss, but feeling quite defeated. You walk to the nearest bus stop and wait for the next one out of town. You did not complete Ebirt’s Quest. :(",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
+    }]
+  }],
+  "21": [{
+    "prompts": [{
+      "short": "Griffin loves the idea of sharing the mascot duties with you, and he accepts the proposal happily. He even compliments you on your cool hat! The students and faculty are excited to have another mascot in addition to Griffin, and they welcome you with open arms. Everyone is happy! Congratulations, you completed Ebirt’s Quest! Ending #3: The Cooperative Mascots\n",
+      "medium": "Griffin loves the idea of sharing the mascot duties with you, and he accepts the proposal happily. He even compliments you on your cool hat! The students and faculty are excited to have another mascot in addition to Griffin, and they welcome you with open arms. Everyone is happy! Congratulations, you completed Ebirt’s Quest! Ending #3: The Cooperative Mascots\n",
+      "long": "Griffin loves the idea of sharing the mascot duties with you, and he accepts the proposal happily. He even compliments you on your cool hat! The students and faculty are excited to have another mascot in addition to Griffin, and they welcome you with open arms. Everyone is happy! Congratulations, you completed Ebirt’s Quest! Ending #3: The Cooperative Mascots\n",
+      "skill": "charm"
+    }],
+    "choices": [{
+      "a": "",
+      "b": ""
     }]
   }]
 }
